@@ -1,3 +1,2 @@
-# angryBirdsStage1
-Stage 1 Angry Birds
-https://fareesa1.github.io/AngryBird1/
+# AngryBirdsStage3
+Stage 3 Angry Birds: Introducing Constraint
