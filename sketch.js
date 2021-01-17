@@ -13,7 +13,7 @@ var bg = "sprites/bg1.png";
 var score = 0;
 
 function preload() {
-    getBackgroundImg();
+   backgroundImg = loadImage("bg.jpg")
 }
 
 function setup(){
@@ -47,7 +47,7 @@ function setup(){
 }
 
 function draw(){
-    if(backgroundImg)
+   
         background(backgroundImg);
     
         noStroke();
@@ -103,20 +103,4 @@ function keyPressed(){
     }
 }
 
-async function getBackgroundImg(){
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/japan");
-    var responseJSON = await response.json();
 
-    var datetime = responseJSON.datetime;
-    var hour = datetime.slice(11,13);
-    
-    if(hour>=0600 && hour<=1900){
-        bg = "sprites/bg1.png";
-    }
-    else{
-        bg = "sprites/bg1.png";
-    }
-
-    backgroundImg = loadImage(bg);
-    console.log(backgroundImg);
-}
