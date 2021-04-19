@@ -17,7 +17,7 @@ function preload() {
 }
 
 function setup(){
-    var canvas = createCanvas(1200,400);
+    var canvas = createCanvas(1000,400);
     engine = Engine.create();
     world = engine.world;
 
@@ -41,7 +41,8 @@ function setup(){
     log5 = new Log(870,120,150, -PI/7);
 
     bird = new Bird(200,50);
-
+    bird1 = new Bird(150,150);
+bird2 = new Bird(100,150)
     //log6 = new Log(230,180,80, PI/2);
     slingshot = new SlingShot(bird.body,{x:200, y:50});
 }
@@ -75,6 +76,8 @@ function draw(){
     log5.display();
 
     bird.display();
+    bird1.display()
+    bird2.display()
     platform.display();
     //log6.display();
     slingshot.display();
