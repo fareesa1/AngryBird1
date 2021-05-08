@@ -28,6 +28,8 @@ function setup(){
     box1 = new Box(700,320,70,70);
     box2 = new Box(920,320,70,70);
     pig1 = new Pig(810, 350);
+    pig1.image = loadImage("sprites/Qeen_Pig.png")
+    
     log1 = new Log(810,260,300, PI/2);
 
     box3 = new Box(700,240,70,70);
@@ -84,12 +86,9 @@ function draw(){
     console.log(bird.body.speed);    
 }
 
-function mouseDragged(){
-    //if (gameState!=="launched"){
-        if(mouseX>300){
+function mouseDragged(){      
         Matter.Body.setPosition(bird.body, {x: mouseX , y: mouseY});
-}
-    //}
+
 }
 
 
