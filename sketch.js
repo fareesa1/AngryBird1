@@ -7,13 +7,15 @@ var engine, world;
 var box1, pig1,pig3;
 var backgroundImg,platform;
 var bird, slingshot;
+var bird2;
 
 var gameState = "onSling";
 var bg = "sprites/bg1.png";
 var score = 0;
+var bgImage = "sprites/bgimage.jpg"
 
 function preload() {
-   backgroundImg = loadImage("bg.png")
+   backgroundImg = loadImage("sprites/bgimage.jpg")
 }
 
 function setup(){
@@ -36,7 +38,8 @@ function setup(){
 
     bird = new Bird(200,50);
     bird1 = new Bird(150,150);
-bird2 = new Bird(100,150)
+    bird2 = new Bird(100,150);
+
     //log6 = new Log(230,180,80, PI/2);
     slingshot = new SlingShot(bird.body,{x:200, y:50});
 }
