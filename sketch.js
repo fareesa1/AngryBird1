@@ -37,6 +37,8 @@ function setup(){
     bird = new Bird(200,50);
     bird1 = new Bird(150,150);
 bird2 = new Bird(100,150)
+bird.image = loadImage("sprites/birdYellow.webp")
+
     //log6 = new Log(230,180,80, PI/2);
     slingshot = new SlingShot(bird.body,{x:200, y:50});
 }
@@ -50,6 +52,9 @@ function draw(){
         fill("white")
         text("Score  " + score, width-300, 50)
     
+if (bird.body.position.x > 500){bird.image = loadImage("sprites/birdYellowHappy.webp")}
+
+
     Engine.update(engine);
     //strokeWeight(4);
     box1.display();
