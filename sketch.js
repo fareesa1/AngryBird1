@@ -37,6 +37,8 @@ function setup(){
     box3 = new Box(700,220,70,70);
     box4 = new Box(920,220,70,70);
 
+    pig2 = new Pig(810, 250);
+
     bird = new Bird(200,50);
     bird1 = new Bird(150,150);
 
@@ -72,6 +74,7 @@ if (bird.body.position.x > 500){bird.image = loadImage("sprites/birdYellowHappy.
 
     box3.display();
     box4.display();
+    pig2.display();
     
     bird.display();
     bird1.display()
