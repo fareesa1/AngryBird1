@@ -46,7 +46,7 @@ bird2 = new Bird(100,150)
 bird.image = loadImage("sprites/birdYellow.webp")
 
     bird2 = new Bird(100,150);
-
+log2  = new Log(810,200,300,PI/2)
     //log6 = new Log(230,180,80, PI/2);
     slingshot = new SlingShot(bird.body,{x:200, y:50});
 }
@@ -82,6 +82,7 @@ if (bird.body.position.x > 500){bird.image = loadImage("sprites/birdYellowHappy.
     platform.display();
     //log6.display();
     slingshot.display();
+    log2.display()
     console.log(bird.body.speed);    
 }
 
