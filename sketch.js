@@ -36,7 +36,7 @@ function setup(){
 
     box3 = new Box(700,220,70,70);
     box4 = new Box(920,220,70,70);
-
+box5 = new Box(810,200,70,70);
     pig2 = new Pig(810, 250);
 
     bird = new Bird(200,50);
@@ -84,6 +84,7 @@ if (bird.body.position.x > 500){bird.image = loadImage("sprites/birdYellowHappy.
     slingshot.display();
     log2.display()
     console.log(bird.body.speed);    
+    box5.display()
 }
 
 function mouseDragged(){      
